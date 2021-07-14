@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fieldset and Disabled</title>
+    <style>
+        fieldset {
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Type of User</legend>
+            <label for="userType"> What type of user are you? </labl>
+            <input type="radio" id="customer" name="customer" value="customer">
+            <label for="customer">Customer</label>
+            <input type="radio" id="employeeType" name="employeeType" value="employeeType">
+            <label for="employeeType">Employee/Contractor</label>
+            <input type="radio" id="fedEmp" name="fedEmp" value="fedEmp">
+            <label for="fedEmp">Federal Employee/Contractor</label>
+            
+    </fieldset>
+    <fieldset>
+        <legend>Email</legend>
+            <label for="personalEmailAddress">Personal Email Address</labl>
+            <input type="email" name="personalEmailAddress" id="personalEmailAddress" >
+            <label for="businessEmailAddress">Business Email Address</labl>
+            <input type="email" name="businessEmailAddress" id="businessEmailAddress" >
+    </fieldset>
+    <fieldset >
+        <legend>Password</legend>
+                <label for="personalPwd">Password</label>
+                <input type="password" id="personalPwd" name="personalPwd">
+    </fieldset>
+    <fieldset >
+        <legend>Use Case</legend>
+                <label for="interest">Im interested in</label>
+                <input type="text" id="interest" name="interest" list="categories">
+                <datalist id="categories">
+                    <option value="personal" label="personal" default>
+                    <option value="Non-Personal" label="Non-personal">
+                  </datalist>
+    </fieldset>
+    <fieldset >
+        <legend>Age Verification</legend>
+                <label for="ageVerification">I am Over 18 years of age</label>
+                <input type="checkbox" id="ageVerification" name="ageVerification">
+    </fieldset>
+</form>
+</body>
+</html>
